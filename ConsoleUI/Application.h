@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include "Player.h"
+#include "Map.h"
 
 std::string GetInput(std::string prompt) {
 	std::string input;
@@ -17,5 +18,5 @@ void Start() {
 
 	Player player = Player(name);
 
-	
+	Map map = Map("Landing Area");
 }

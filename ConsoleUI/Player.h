@@ -1,13 +1,12 @@
 #pragma once
 #include <string>
+#include "GameObject.h"
 
-class Player {
+class Player : public GameObject{
 public:
-	std::string name;
 	int hitpoints;
 
-	Player(std::string name) {
-		this->name = name;
+	Player(std::string name) : GameObject(name) {
 		hitpoints = 10;
 	}
 };
