@@ -3,8 +3,9 @@
 #include "GameObject.h"
 
 class Player : public GameObject{
-public:
+private:
 	int hitpoints;
+public:
 
 	Player(std::string name) : GameObject(name) {
 		hitpoints = 10;
