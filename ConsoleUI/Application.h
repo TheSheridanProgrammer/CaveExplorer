@@ -1,8 +1,8 @@
 #pragma once
 #include <iostream>
 #include <string>
-#include "Player.h"
-#include "Map.h"
+#include "../Engine/Player.h"
+#include "../Engine/Map.h"
 
 std::string GetInput(std::string prompt) {
 	std::string input;
@@ -22,8 +22,8 @@ void Start() {
 
 	map.AcceptVisitor(player);
 
-	std::cout << "You have entered " << map.name << endl;
-	std::cout << "Inside map: " << endl;
+	std::cout << "You have entered " << map.name << std::endl;
+	std::cout << "Inside map: " << std::endl;
 
 	for (GameObject obj : map.GetMapObjects()) {
 		std::cout << obj.name;
