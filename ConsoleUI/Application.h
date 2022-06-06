@@ -19,4 +19,13 @@ void Start() {
 	Player player = Player(name);
 
 	Map map = Map("Landing Area");
+
+	map.AcceptVisitor(player);
+
+	std::cout << "You have entered " << map.name << endl;
+	std::cout << "Inside map: " << endl;
+
+	for (GameObject obj : map.GetMapObjects()) {
+		std::cout << obj.name;
+	}
 }
